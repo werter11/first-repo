@@ -1,0 +1,76 @@
+git -v
+git config --global user.name username
+git config --global user.email email 
+git config --global credential.helper store
+git config --global --list
+
+cd d:
+pwd
+ls -a 
+ls -altr
+rm -rf fileName
+echo "">fileName
+cat fileName
+ln -s 源文件 目标文件
+
+
+git init
+git init fileName
+git clone urlName
+
+工作区：在工作区，可以对文件操作，如增加、删除、修改。
+暂存区：保存即将提交到仓库的修改内容
+本地仓库：仓库
+
+git status
+git add . 提交整个目录
+git add 通配符 如*.txt
+git commit -m 提交注释
+git log 提交记录，可以用--oneline查看简洁的提交记录
+
+
+git reset
+	--soft 保留工作区和暂存区
+	--hard 都不保留
+	--mixed 保留工作区，不保存暂存区
+git ls-files暂存区内容
+
+git diff 比较工作区和暂存区的差异
+git diff HEAD 比较工作区和本地仓库的差异
+git diff --cached/--staged 比较暂存区和本地仓库的差异
+git diff head~ head比较commit之间的差异
+git diff branch1 branch2
+
+git rm 删除工作区，暂存区文件，不要忘了提交
+git rm --cached 删除暂存区，不删除工作区
+
+.gitignore 把文件添加到这里面，git就不会add和commit文件
+
+git clone 地址
+
+ssh-keygen -t rsa -b 4096
+
+
+git remote add 远程仓库别名  远程仓库地址
+
+git push -u 远程仓库别名 本地分支名：远程分支名
+
+git remote -v 查看远程仓库
+
+git pull 远程仓库别名 远程分支名：本地分支名
+
+
+
+
+git branch dev 
+git branch -d dev合并完成后，删除分支
+git branch -D 删除分支
+git checkout dev  1切换分支，2恢复修改的文件
+git switch dev   切换分支
+
+
+git merge dev 把dev合并到当前分支
+
+AdP7XD5573b2
+
+ 
